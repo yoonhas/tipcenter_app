@@ -1,0 +1,51 @@
+
+<PSS>:
+    orientation: "vertical"
+    username: username
+    password: password
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        size_hint_y: None
+        height: "200dp"
+        Button:
+            background_normal: 'tiplogo.png'
+            background_down: 'tiplogo.png'
+            size_hint_x: None
+            width: 400
+
+        Button:
+            background_normal: 'crosscenter.png'
+            background_down: 'crosscenter.png'
+            size_hint_x: None
+            width: 400
+            height: 600
+
+
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+
+        Label:
+            text: "Username"
+        TextInput:
+            id: username
+
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Label:
+            text: "Password"
+        TextInput:
+            id: password
+
+    BoxLayout:
+        size_hint_y: None
+        height: "40dp"
+        Button:
+            text: "Submit"
+            on_press: root.submit_login()
+
+    BoxLayout:
+
